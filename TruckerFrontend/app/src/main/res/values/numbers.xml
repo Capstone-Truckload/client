@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="hashing_iterations">100</integer>
+    <integer name="password_hash_length">128</integer>
+</resources>

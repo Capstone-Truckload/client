@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.HubActivity">
+
+    <Button
+        android:id="@+id/biddingButton"
+        android:layout_width="@dimen/hub_button_width"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/activity_edge_margins"
+        android:layout_marginLeft="@dimen/activity_edge_margins"
+        android:layout_marginRight="@dimen/activity_edge_margins"
+        android:layout_marginStart="@dimen/activity_edge_margins"
+        android:layout_marginTop="@dimen/activity_edge_margins"
+        android:focusable="true"
+        android:onClick="onClick"
+        android:text="@string/filter_loads_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/accountButton"
+        android:layout_width="@dimen/hub_button_width"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/activity_edge_margins"
+        android:layout_marginLeft="@dimen/activity_edge_margins"
+        android:layout_marginRight="@dimen/activity_edge_margins"
+        android:layout_marginStart="@dimen/activity_edge_margins"
+        android:layout_marginTop="@dimen/activity_edge_margins"
+        android:focusable="true"
+        android:onClick="onClick"
+        android:text="@string/manage_account_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentButton" />
+
+    <Button
+        android:id="@+id/currentButton"
+        android:layout_width="@dimen/hub_button_width"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/activity_edge_margins"
+        android:layout_marginLeft="@dimen/activity_edge_margins"
+        android:layout_marginRight="@dimen/activity_edge_margins"
+        android:layout_marginStart="@dimen/activity_edge_margins"
+        android:layout_marginTop="@dimen/activity_edge_margins"
+        android:focusable="true"
+        android:onClick="onClick"
+        android:text="@string/current_loads_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/biddingButton" />
+
+</android.support.constraint.ConstraintLayout>

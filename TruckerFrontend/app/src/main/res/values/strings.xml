@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Truckload Booking Trucker</string>
+    <string name="login_title">Login</string>
+    <string name="account_creation_title">Account Creation</string>
+    <string name="submit_text">Submit</string>
+    <string name="create_account_text">Create Account</string>
+    <string name="username_text">Name</string>
+    <string name="password_text">Password</string>
+    <string name="email_text">Email</string>
+    <string name="phone_number_text">Email</string>
+    <string name="filter_loads_text">Available Loads</string>
+    <string name="current_loads_text">Current Loads</string>
+    <string name="manage_account_text">Manage Account</string>
+</resources>
