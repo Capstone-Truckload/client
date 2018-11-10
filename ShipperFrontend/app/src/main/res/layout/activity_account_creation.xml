@@ -10,11 +10,14 @@
         android:id="@+id/titleLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/activity_edge_margins"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="@dimen/activity_edge_margins"
+        android:layout_marginEnd="8dp"
         android:text="@string/account_creation_title"
         android:textSize="@dimen/title_text"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -32,40 +35,41 @@
         android:id="@+id/nameInput"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/activity_edge_margins"
         android:layout_marginStart="@dimen/activity_edge_margins"
-        android:layout_marginTop="@dimen/activity_component_margins"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/activity_edge_margins"
         android:ems="10"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nameLabel" />
+        app:layout_constraintTop_toBottomOf="@+id/titleLabel" />
 
     <TextView
         android:id="@+id/phoneLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/activity_edge_margins"
+        android:layout_marginLeft="16dp"
         android:layout_marginTop="@dimen/activity_component_margins"
         android:text="@string/phone_number_text"
         android:textSize="@dimen/label_text"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nameInput" />
+        app:layout_constraintTop_toBottomOf="@+id/nameInput"
+        tools:text="Phone" />
 
     <EditText
         android:id="@+id/phoneInput"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/activity_edge_margins"
+        android:layout_height="43dp"
         android:layout_marginStart="@dimen/activity_edge_margins"
-        android:layout_marginTop="@dimen/activity_component_margins"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/activity_edge_margins"
         android:ems="10"
         android:inputType="phone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/phoneLabel" />
+        app:layout_constraintTop_toBottomOf="@+id/nameInput" />
 
     <TextView
         android:id="@+id/emailLabel"

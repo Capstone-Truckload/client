@@ -6,4 +6,55 @@
     android:layout_height="match_parent"
     tools:context=".activities.NewLoadActivity">
 
+    <EditText
+        android:id="@+id/loadName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Load Name"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="26dp" />
+
+    <EditText
+        android:id="@+id/originAddress"
+        android:layout_width="358dp"
+        android:layout_height="82dp"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        android:text="Origin Address"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="79dp" />
+
+    <EditText
+        android:id="@+id/destinationAddress"
+        android:layout_width="359dp"
+        android:layout_height="96dp"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        android:text="Destination Address"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="178dp" />
+
+    <Button
+        android:id="@+id/createLoad"
+        android:layout_width="191dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Create Load"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="402dp" />
+
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="$0.00"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="288dp" />
 </android.support.constraint.ConstraintLayout>
